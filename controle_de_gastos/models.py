@@ -15,9 +15,9 @@ class Categoria(models.Model):
     def __str__(self):
         return self.title
 
-class Movimentacao(models.Model)
+class Movimentacao(models.Model):
     valor = models.DecimalField(max_digits=10, decimal_places=2)
     descricao = CharField(max_length=200)
     data = DateField()
     categoria = ForeignKey('auth.User', on_delete=models.CASCADE, null=False)
-    usuario = ForeignKey('auth.User', on_delete=models.CASCADE), null=False.+
+    usuario = ForeignKey('auth.User', on_delete=models.CASCADE), null=False+ 
